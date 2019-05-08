@@ -1,0 +1,153 @@
+QUERY
+
+  GENERAL:
+
+    - find activities for a company
+
+    QUERY: Get all activities where dataHubId = aaa
+
+
+    {
+        'query': {
+            'bool': {
+                'filter': {
+                    'bool': {
+                        'should': [
+                            { 'term': { 'object.id': 'dit:Company:dataHubId:aaa' }},
+                            { 'term': { 'context.id': 'dit:Company:dataHubId:aaa' }},
+                            { 'term': { 'object.audience.id': 'dit:Company:dataHubId:aaa' }},
+                            { 'term': { 'context.audience.id': 'dit:Company:dataHubId:aaa' }},
+                        }],
+
+                        <optional extra below>
+                    },
+                }
+            }
+        },
+    }
+
+  FILTERS:
+
+    who:
+    - my activity
+    - my team's activity
+    - activity with adviser
+
+    QUERY: above AND adviser id = bbb
+                        'must': {
+                            'bool': {
+                                'should': [
+                                    { 'term': { 'actor.id': 'dit:Adviser:dataHubId:bbb' }},
+                                    { 'term': { 'object.audience.id': 'dit:Adviser:dataHubId:bbb' }},
+                                }],
+                            },
+                        }
+
+    QUERY: above AND team id = ccc (tricky one as this is more nested and non-generic so better to avoid for now)
+
+                        'must': {
+                            'bool': {
+                                'should': [
+                                    { 'term': { 'actor.dit:team.id': 'dit:Team:dataHubId:ccc' }},
+                                    { 'term': { 'object.audience.dit:team.id': 'dit:Team:dataHubId:ccc' }},
+                                }],
+                            },
+                        }
+
+
+    about:
+    - everything
+    - company
+    - orders
+    - etc.
+
+    QUERY: above AND activity type ddd
+
+                        'must': {
+                            'bool': {
+                                'should': [
+                                    { 'term': { 'object.type': 'ddd' }},
+                                    { 'term': { 'context.type': 'ddd' }},
+                                }],
+                            },
+                        }
+
+    when:
+    - from
+    - to
+
+    QUERY: above AND date between eee and fff
+
+                        'must': {
+                            "range" : {
+                                "published" : {
+                                    "gt" : "eee",
+                                    "lt" : "fff"
+                                }
+                            }
+                        }
+
+
+MAPPING:
+    'mappings': {
+        '_doc': {
+            'dynamic': False,
+            'properties': {
+                # needed for Data Hub
+                'id': {
+                    'type': 'keyword',
+                },
+                'object.id': {
+                    'type': 'keyword',
+                },
+                'context.id': {
+                    'type': 'keyword',
+                },
+
+                'actor.id': {
+                    'type': 'keyword',
+                },
+                'object.audience.id': {
+                    'type': 'keyword',
+                },
+                'context.audience.id': {
+                    'type': 'keyword',
+                },
+
+                'object.type': {
+                    'type': 'keyword',
+                },
+                'context.type': {
+                    'type': 'keyword',
+                },
+
+
+                'published': {
+                    'type': 'date',
+                },
+
+                # other stuff already in Activity Stream
+
+                'type': {
+                    'type': 'keyword',
+                },
+                'object.published': {
+                    'type': 'date',
+                },
+                'object.content': {
+                    'type': 'text',
+                },
+                'object.name': {
+                    'type': 'text',
+                },
+                # Not AS 2.0, but is used, and is a space-separated
+                # list of keywords
+                'object.keywords': {
+                    'type': 'text',
+                },
+                'actor.dit:companiesHouseNumber': {
+                    'type': 'keyword',
+                },
+            },
+        },
+    },

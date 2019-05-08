@@ -1,0 +1,32 @@
+{
+  "id": "dit:hmrc:1:Announce",
+  "type": "Announce",
+  "published": "2019-01-18T08:43:40.904649+00:00",
+
+  "generator": {
+    "name": "dit:hmrc",
+    "type": "Application"
+  },
+
+  "object": {
+    "id": "dit:hmrc:1",
+    "name": "Export of goods",
+
+    "dit:commodityCodes": [
+      "84351000",
+      "84359000"
+    ]
+  },
+
+  "context": {
+    "id": "dit:Company:dataHubId:a4ead59f-dfc8-e511-a5e6-e4115bead28a",
+    "dit:dataHubId": "a4ead59f-dfc8-e511-a5e6-e4115bead28a",
+    "dit:dunsNumber": "123456789",
+    "dit:companiesHouseNumber": "987654321",
+    "type": [
+      "Organization",
+      "dit:Company"
+    ],
+    "name": "Marco Test"
+  }
+}
