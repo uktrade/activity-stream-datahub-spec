@@ -27,7 +27,6 @@
     "attributedTo": [
       {
         "id": "dit:DataHubCompany:a4ead59f-dfc8-e511-a5e6-e4115bead28a",
-        "dit:dataHubId": "a4ead59f-dfc8-e511-a5e6-e4115bead28a",
         "dit:dunsNumber": "123456789",
         "dit:companiesHouseNumber": "987654321",
         "type": [
@@ -38,7 +37,6 @@
       },
       {
         "id": "dit:DataHubContact:04cadecd-2de4-4cda-9fda-59db93495dba",
-        "dit:dataHubId": "04cadecd-2de4-4cda-9fda-59db93495dba",
         "type": [
           "Person",
           "dit:Contact"
@@ -48,7 +46,6 @@
       },
       {
         "id": "dit:DataHubAdviser:2dc3c098-2f51-43c5-8767-752e8e5065b5",
-        "dit:dataHubId": "2dc3c098-2f51-43c5-8767-752e8e5065b5",
         "type": [
           "Person",
           "dit:Adviser"
@@ -57,7 +54,6 @@
         "name": "Mario Bros",
         "dit:team": {
           "id": "dit:DataHubTeam:3a48318c-9698-e211-a939-e4115bead28a",
-          "dit:dataHubId": "3a48318c-9698-e211-a939-e4115bead28a",
           "type": [
             "Group",
             "dit:Team"
