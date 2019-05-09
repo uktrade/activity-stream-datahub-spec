@@ -1,5 +1,5 @@
 {
-  "id": "dit:Order:dataHubId:53260d3b-15ea-4f04-b44b-33ded9c4518e:Create",
+  "id": "dit:DataHubOrder:53260d3b-15ea-4f04-b44b-33ded9c4518e:Create",
   "type": "Create",
   "published": "2019-05-03T08:43:40.904649+00:00",
 
@@ -10,7 +10,7 @@
 
   "actor": [
     {
-      "id": "dit:Adviser:dataHubId:2dc3c098-2f51-43c5-8767-752e8e5065b5",
+      "id": "dit:DataHubAdviser:2dc3c098-2f51-43c5-8767-752e8e5065b5",
       "dit:dataHubId": "2dc3c098-2f51-43c5-8767-752e8e5065b5",
       "type": [
         "Person",
@@ -19,7 +19,7 @@
       "dit:emailAddress": "mariobros@dit.com",
       "name": "Mario Bros",
       "dit:team": {
-        "id": "dit:Team:dataHubId:3a48318c-9698-e211-a939-e4115bead28a",
+        "id": "dit:DataHubTeam:3a48318c-9698-e211-a939-e4115bead28a",
         "dit:dataHubId": "3a48318c-9698-e211-a939-e4115bead28a",
         "type": [
           "Group",
@@ -31,7 +31,7 @@
   ],
 
   "object": {
-    "id": "dit:Order:dataHubId:53260d3b-15ea-4f04-b44b-33ded9c4518e",
+    "id": "dit:DataHubOrder:53260d3b-15ea-4f04-b44b-33ded9c4518e",
     "type": "dit:Order",
     "name": "MYV641/19",
 
@@ -47,7 +47,7 @@
 
     "audience": [
       {
-        "id": "dit:Company:dataHubId:a4ead59f-dfc8-e511-a5e6-e4115bead28a",
+        "id": "dit:DataHubCompany:a4ead59f-dfc8-e511-a5e6-e4115bead28a",
         "dit:dataHubId": "a4ead59f-dfc8-e511-a5e6-e4115bead28a",
         "dit:dunsNumber": "123456789",
         "dit:companiesHouseNumber": "987654321",
@@ -58,7 +58,7 @@
         "name": "Marco Test"
       },
       {
-        "id": "dit:Contact:dataHubId:04cadecd-2de4-4cda-9fda-59db93495dba",
+        "id": "dit:DataHubContact:04cadecd-2de4-4cda-9fda-59db93495dba",
         "dit:dataHubId": "04cadecd-2de4-4cda-9fda-59db93495dba",
         "type": [
           "Person",
@@ -68,7 +68,7 @@
         "name": "John Doe"
       },
       {
-        "id": "dit:Adviser:dataHubId:2dc3c098-2f51-43c5-8767-752e8e5065b5",
+        "id": "dit:DataHubAdviser:2dc3c098-2f51-43c5-8767-752e8e5065b5",
         "dit:dataHubId": "2dc3c098-2f51-43c5-8767-752e8e5065b5",
         "type": [
           "Person",
@@ -77,7 +77,7 @@
         "dit:emailAddress": "mariobros@dit.com",
         "name": "Mario Bros",
         "dit:team": {
-          "id": "dit:Team:dataHubId:3a48318c-9698-e211-a939-e4115bead28a",
+          "id": "dit:DataHubTeam:3a48318c-9698-e211-a939-e4115bead28a",
           "dit:dataHubId": "3a48318c-9698-e211-a939-e4115bead28a",
           "type": [
             "Group",

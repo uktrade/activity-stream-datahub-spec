@@ -1,5 +1,5 @@
 {
-  "id": "dit:Deadline:InvestmentProject:dataHubId:8f2662e9-0691-435f-8edd-7fb9df9d8936:Announce",
+  "id": "dit:Deadline:DataHubInvestmentProject:8f2662e9-0691-435f-8edd-7fb9df9d8936:Announce",
   "type": "dit:Announce",
 
   "generator": {
@@ -8,14 +8,14 @@
   },
 
   "object": {
-    "id": "dit:Deadline:InvestmentProject:dataHubId:8f2662e9-0691-435f-8edd-7fb9df9d8936",
+    "id": "dit:Deadline:DataHubInvestmentProject:8f2662e9-0691-435f-8edd-7fb9df9d8936",
     "type": "dit:Deadline",
     "dit:deadlineDate": "2019-05-03T08:43:40.904649+00:00",
     "dit:deadlineType": "projectLandDate"
   },
 
   "context": {
-    "id": "dit:InvestmentProject:dataHubId:8f2662e9-0691-435f-8edd-7fb9df9d8936",
+    "id": "dit:DataHubInvestmentProject:8f2662e9-0691-435f-8edd-7fb9df9d8936",
     "type": "dit:InvestmentProject",
     "name": "Aphrodite Mcdonald",
 
@@ -33,7 +33,7 @@
 
     "audience": [
       {
-        "id": "dit:Company:dataHubId:a4ead59f-dfc8-e511-a5e6-e4115bead28a",
+        "id": "dit:DataHubCompany:a4ead59f-dfc8-e511-a5e6-e4115bead28a",
         "dit:dataHubId": "a4ead59f-dfc8-e511-a5e6-e4115bead28a",
         "dit:dunsNumber": "123456789",
         "dit:companiesHouseNumber": "987654321",
@@ -44,7 +44,7 @@
         "name": "Marco Test"
       },
       {
-        "id": "dit:Contact:dataHubId:04cadecd-2de4-4cda-9fda-59db93495dba",
+        "id": "dit:DataHubContact:04cadecd-2de4-4cda-9fda-59db93495dba",
         "dit:dataHubId": "04cadecd-2de4-4cda-9fda-59db93495dba",
         "type": [
           "Person",
@@ -54,7 +54,7 @@
         "name": "John Doe"
       },
       {
-        "id": "dit:Adviser:dataHubId:2dc3c098-2f51-43c5-8767-752e8e5065b5",
+        "id": "dit:DataHubAdviser:2dc3c098-2f51-43c5-8767-752e8e5065b5",
         "dit:dataHubId": "2dc3c098-2f51-43c5-8767-752e8e5065b5",
         "type": [
           "Person",
@@ -63,7 +63,7 @@
         "dit:emailAddress": "mariobros@dit.com",
         "name": "Mario Bros",
         "dit:team": {
-          "id": "dit:Team:dataHubId:3a48318c-9698-e211-a939-e4115bead28a",
+          "id": "dit:DataHubTeam:3a48318c-9698-e211-a939-e4115bead28a",
           "dit:dataHubId": "3a48318c-9698-e211-a939-e4115bead28a",
           "type": [
             "Group",
