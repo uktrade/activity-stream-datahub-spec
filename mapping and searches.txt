@@ -13,10 +13,10 @@ QUERY
                 'filter': {
                     'bool': {
                         'should': [
-                            { 'term': { 'object.id': 'dit:Company:dataHubId:aaa' }},
-                            { 'term': { 'context.id': 'dit:Company:dataHubId:aaa' }},
-                            { 'term': { 'object.audience.id': 'dit:Company:dataHubId:aaa' }},
-                            { 'term': { 'context.audience.id': 'dit:Company:dataHubId:aaa' }},
+                            { 'term': { 'object.id': 'dit:DataHubCompany:aaa' }},
+                            { 'term': { 'context.id': 'dit:DataHubCompany:aaa' }},
+                            { 'term': { 'object.audience.id': 'dit:DataHubCompany:aaa' }},
+                            { 'term': { 'context.audience.id': 'dit:DataHubCompany:aaa' }},
                         }],
 
                         <optional extra below>
@@ -37,8 +37,8 @@ QUERY
                         'must': {
                             'bool': {
                                 'should': [
-                                    { 'term': { 'actor.id': 'dit:Adviser:dataHubId:bbb' }},
-                                    { 'term': { 'object.audience.id': 'dit:Adviser:dataHubId:bbb' }},
+                                    { 'term': { 'actor.id': 'dit:DataHubAdviser:bbb' }},
+                                    { 'term': { 'object.audience.id': 'dit:DataHubAdviser:bbb' }},
                                 }],
                             },
                         }
@@ -48,8 +48,8 @@ QUERY
                         'must': {
                             'bool': {
                                 'should': [
-                                    { 'term': { 'actor.dit:team.id': 'dit:Team:dataHubId:ccc' }},
-                                    { 'term': { 'object.audience.dit:team.id': 'dit:Team:dataHubId:ccc' }},
+                                    { 'term': { 'actor.dit:team.id': 'dit:DataHubTeam:ccc' }},
+                                    { 'term': { 'object.audience.dit:team.id': 'dit:DataHubTeam:ccc' }},
                                 }],
                             },
                         }
