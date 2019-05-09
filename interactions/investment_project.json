@@ -26,7 +26,7 @@
       "name": "Investment - Services"
     },
 
-    "audience": [
+    "attributedTo": [
       {
         "id": "dit:DataHubCompany:6cb433cd-a098-e211-a939-e4115bead28a",
         "dit:dataHubId": "6cb433cd-a098-e211-a939-e4115bead28a",

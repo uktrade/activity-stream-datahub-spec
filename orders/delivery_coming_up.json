@@ -32,7 +32,7 @@
     "dit:totalCost": 100000,
     "dit:deliveryDate": "2019-05-03T08:43:40.904649+00:00",
 
-    "audience": [
+    "attributedTo": [
       {
         "id": "dit:DataHubCompany:a4ead59f-dfc8-e511-a5e6-e4115bead28a",
         "dit:dataHubId": "a4ead59f-dfc8-e511-a5e6-e4115bead28a",

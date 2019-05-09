@@ -15,8 +15,8 @@ QUERY
                         'should': [
                             { 'term': { 'object.id': 'dit:DataHubCompany:aaa' }},
                             { 'term': { 'context.id': 'dit:DataHubCompany:aaa' }},
-                            { 'term': { 'object.audience.id': 'dit:DataHubCompany:aaa' }},
-                            { 'term': { 'context.audience.id': 'dit:DataHubCompany:aaa' }},
+                            { 'term': { 'object.attributedTo.id': 'dit:DataHubCompany:aaa' }},
+                            { 'term': { 'context.attributedTo.id': 'dit:DataHubCompany:aaa' }},   # TBC: only for upcoming activities atm
                         }],
 
                         <optional extra below>
@@ -38,7 +38,7 @@ QUERY
                             'bool': {
                                 'should': [
                                     { 'term': { 'actor.id': 'dit:DataHubAdviser:bbb' }},
-                                    { 'term': { 'object.audience.id': 'dit:DataHubAdviser:bbb' }},
+                                    { 'term': { 'object.attributedTo.id': 'dit:DataHubAdviser:bbb' }},
                                 }],
                             },
                         }
@@ -49,7 +49,7 @@ QUERY
                             'bool': {
                                 'should': [
                                     { 'term': { 'actor.dit:team.id': 'dit:DataHubTeam:ccc' }},
-                                    { 'term': { 'object.audience.dit:team.id': 'dit:DataHubTeam:ccc' }},
+                                    { 'term': { 'object.attributedTo.dit:team.id': 'dit:DataHubTeam:ccc' }},
                                 }],
                             },
                         }
@@ -93,10 +93,11 @@ MAPPING:
         '_doc': {
             'dynamic': False,
             'properties': {
-                # needed for Data Hub
                 'id': {
                     'type': 'keyword',
                 },
+
+                # needed for Data Hub
                 'object.id': {
                     'type': 'keyword',
                 },
@@ -107,10 +108,10 @@ MAPPING:
                 'actor.id': {
                     'type': 'keyword',
                 },
-                'object.audience.id': {
+                'object.attributedTo.id': {
                     'type': 'keyword',
                 },
-                'context.audience.id': {
+                'context.attributedTo.id': {  # TBC: only for upcoming activities atm
                     'type': 'keyword',
                 },
 
