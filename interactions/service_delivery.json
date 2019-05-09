@@ -24,7 +24,7 @@
       "name": "Events - Overseas"
     },
 
-    "audience": [
+    "attributedTo": [
       {
         "id": "dit:DataHubCompany:a4ead59f-dfc8-e511-a5e6-e4115bead28a",
         "dit:dataHubId": "a4ead59f-dfc8-e511-a5e6-e4115bead28a",
